@@ -1,0 +1,33 @@
+/*al body*/
+body	{
+	font-family:Century Gothic, Sans-serif;
+	font-size: 14pt;
+	color:#fff;
+	background-color: #7FB730;
+	margin: 0;
+	padding: 0;
+}
+/*div cabecera*/
+.clase1	{
+	background-image: url(../imagenes/header_options.png);
+	width: 870px;
+	height: 117px;
+	margin-left: 15%;
+	margin-right: 15%;
+	color:#FFF;
+}
+/*pie de pagina*/
+footer	{
+	background-color:black;
+	font-family:Century Gothic, Sans-serif;
+	font-size: 9pt;
+	color:#FFF;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+/*content de pie de pagina + opacidad*/
+.opacidad	{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	opacity:0.5;
+}

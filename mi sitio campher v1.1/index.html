@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="utf-8" /> 
+    <title>CampherGlutenFree</title>
+	<link rel="stylesheet" type="text/css" href="estilo/pagina.css" media="all"> 
+    <link rel="stylesheet" type="text/css" href="estilo/menu_desplegable.css"> 
+	<link rel="stylesheet" type="text/css" href="estilo/slide.css" media="all"> 
+
+  	<link rel="shortcut icon" href="imagenes/campherlogo.jpg">
+    <script type="text/javascript" src="estilo/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="estilo/jquery.cycle.all.js"></script>
+</head>
+
+
+<body> <!--aqui empieza la acción-->
+<header class="clase1"><!--header dentro del body aplicando CSS clase 1 LA IMG DEL LOGO CAMPHER (NO BORRAR)-->
+<ul id="main_menu">
+		<li><a href="#" onMouseOver="this.style.color='green'" onMouseOut="this.style.color='white'" ><center><h5>Inicio</h5></center></a></li>
+		<li><a href="pagina/productos.html"><center><h5>Productos</h5></center></a>
+			<ul class="submenu">
+       			<li><a href="pagina/pedidos.html"><center><h5>Pedidos</h5></center></a></li>
+				<li><a href="pagina/recetas.html"><center><h5>Recetas</h5></center></a></li>
+				<li><a href="pagina/tips.html"><center><h5>Tips</h5></center></a></li>
+       		</ul>
+		</li>
+   		<li><a href="pagina/contactenos.html"><center><h5>Contactenos</h5></center></a></li>
+</ul>   
+</header>
+<script type="text/javascript">
+	$('#slider').cycle({
+		fx:		'fade',
+		speed:	'slow',
+		next:	'#next',
+		prev:	'#prev',
+	});
+</script>
+<div id="wrapper">
+	<div id="container_photosplus">
+    	<div class="controller" id="prev"></div>
+        <div id="slider">
+        	<img src="imagenes/campher_slide_1.jpg" width="800" height="600">
+        	<img src="imagenes/campher_slide_2.jpg" width="800" height="600">
+        	<img src="imagenes/campher_slide_3.jpg" width="800" height="600">
+        </div>
+        <div class="controller" id="next"></div>
+	</div>
+</div>
+<br>
+<!--pie de pagina-->
+<center>
+	<footer>
+       	<div class="opacidad">
+			<p>Derechos reservados</p> 
+			<p>Contactenos en </p>
+			<p><em>info@campher.com</em></p>
+        </div>
+	</footer> 
+</center>
+
+</body> 
+</html>
