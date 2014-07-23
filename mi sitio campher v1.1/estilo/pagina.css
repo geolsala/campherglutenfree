@@ -18,6 +18,8 @@ body	{
 }
 /*pie de pagina*/
 footer	{
+	position:static;
+	border-radius: 10px 10px 0px 0px;
 	background-color:black;
 	font-family:Century Gothic, Sans-serif;
 	font-size: 9pt;
