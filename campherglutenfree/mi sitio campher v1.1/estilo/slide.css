@@ -1,0 +1,66 @@
+/*slide css*/
+
+#wrapper {
+	display: block;
+	height: 600px;
+	width: 800px;
+	margin: auto;
+}
+#container_photosplus {
+	background-color: #EAEAEA;
+	display: block;
+	height: 600px;
+	width: 800px;
+	border-radius: 10px 10px 10px 10px;
+}
+#prev {
+	background-image: url(../imagenes/prev.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	float: left;
+	height: 600px;
+	width: 100px;
+	position: relative;
+	z-index: 99;
+}
+#next {
+	background-image: url(../imagenes/next.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	float: right;
+	height: 600px;
+	width: 100px;
+	position: relative;
+	z-index: 99;
+}
+#prev:hover{
+	background:#FFF;
+	background-image: url(../imagenes/prev_mouseover.png);
+	background-repeat: no-repeat;
+	opacity:0.3;
+	border-radius: 10px 0px 0px 10px;
+	-moz-transition:ease 0.9s;
+	-ms-transition:ease 0.9s;
+	-webkit-transition:ease 0.9s;
+	}
+#next:hover{
+	background:#FFF;
+	background-image: url(../imagenes/next_mouseover.png);
+	background-repeat: no-repeat;
+	opacity:0.3;
+	border-radius: 0px 10px 10px 0px;
+	-moz-transition:ease 0.9s;
+	-ms-transition:ease 0.9s;
+	-webkit-transition:ease 0.9s;
+	}
+#slider {
+	display: block;
+	float: left;
+	height: 600px;
+	width: 800px;
+	overflow: hidden;
+	position: absolute;
+	border-radius: 10px 10px 10px 10px;
+}

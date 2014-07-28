@@ -1,0 +1,62 @@
+/*al body*/
+
+body	{
+	font-family:Century Gothic, Sans-serif;
+	font-size: 13pt;
+	color:#fff;
+	background-color: #7FB730;
+	margin: 0;
+	padding: 0;
+}
+.body_izq	{
+	opacity:0.5;
+	height:100%
+}
+.body_der	{
+	opacity:0.5;
+	height:100%
+}
+
+/*div cabecera*/
+.clase1	{
+	margin-top:1%;
+	margin-left:15%;
+	margin-right:15%;
+	background: black;
+	border-radius: 10px 10px 10px 10px;
+	height:70px;
+	position:static;
+}
+#logo {
+	margin-top: -5%;
+	margin-left: 55%;
+	position:relative;
+}
+div.ajuste1{
+	position:absolute;
+}
+/*pie de pagina*/
+footer	{
+	padding-top:3px;
+	padding-bottom:2px;
+	background-color:black;
+	font-family:Century Gothic, Sans-serif;
+	font-size: 9pt;
+	color:#FFF;
+	margin-left: 15%;
+	margin-right: 15%;
+	border-radius: 10px 10px 0px 0px;
+	position:relative;
+
+}
+/*content de pie de pagina + opacidad*/
+.opacidad	{
+	opacity: 0.5;
+}
+/* iconos redese sociales pie de pagina*/
+.fb{
+	position:relative;
+}
+.twitter{
+	position:relative;
+}
