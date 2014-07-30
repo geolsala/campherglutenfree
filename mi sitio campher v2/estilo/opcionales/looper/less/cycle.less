@@ -1,0 +1,354 @@
+// Transition mixin
+.transition(@transitionA, @transitionB: X, ...) {
+  @props: ~`"@{arguments}".replace(/[\[\]]|\,\sX/g, '')`;
+  -webkit-transition: @props;
+  -moz-transition: @props;
+  -o-transition: @props;
+  transition: @props;
+}
+
+// Opacity mixin
+.opacity(@opacity) {
+  opacity: @opacity / 100;
+  filter: ~"alpha(opacity=@{opacity})";
+}
+
+// Border Radius mixin
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+// Cycle
+@cycle-width:                     auto;
+@cycle-height:                    auto;
+@cycle-transition-speed:          .5s;
+@cycle-easing-slide:              ease-in-out;
+@cycle-easing-xfade:              ease-in;
+
+// Cycle controls
+@cycle-control-width:             40px;
+@cycle-control-height:            40px;
+@cycle-control-size:              30px;
+@cycle-control-background-color:  #333;
+@cycle-control-border:            3px solid #fff;
+@cycle-control-border-radius:     23px;
+@cycle-control-color:             #fff;
+@cycle-control-color-hover:       @cycle-control-color;
+@cycle-control-opacity:           50;
+@cycle-control-opacity-hover:     90;
+
+// Cycle navigation
+@cycle-nav-size:                  36px;
+@cycle-nav-link-color:            #049cdb;
+@cycle-nav-link-color-hover:      darken(@cycle-nav-link-color, 15%);
+@cycle-nav-link-color-active:     @cycle-nav-link-color-hover;
+
+//
+// Cycle
+// --------------------------------------------------
+
+.cycle {
+  position: relative;
+  z-index: 1;
+  line-height: 1;
+  width: @cycle-width;
+  height: @cycle-height;
+
+  .cycle-inner {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.cycle {
+
+  .item {
+    display: none;
+    position: relative;
+    z-index: 3;
+
+    &.active,
+    &.next,
+    &.prev {
+      display: block;
+    }
+
+    &.active {
+      top:0;
+      left:0;
+      z-index: 4;
+    }
+
+    // blockify images
+    > img {
+      display: block;
+      line-height: 1;
+    }
+  }
+
+  &.xfade {
+
+    .cycle-inner {
+      height: 100%;
+    }
+
+    .item {
+      .transition(@cycle-transition-speed @cycle-easing-xfade opacity);
+      position: absolute;
+      width: 100%;
+      opacity: 0;
+
+      &.go {
+        opacity: 1;
+      }
+
+      &.active {
+        opacity: 1;
+
+        &.go {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  // slide animation
+  &.slide {
+
+    // slide with cross-fade
+    &.xfade .item {
+      .transition(@cycle-transition-speed @cycle-easing-slide left, @cycle-transition-speed @cycle-easing-xfade opacity);
+    }
+
+    .item {
+      .transition(@cycle-transition-speed @cycle-easing-slide left);
+
+      // next/prev slide
+      &.next,
+      &.prev {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+
+      // slide left (default)
+      &.next {
+        left:100%;
+      }
+      &.prev {
+        left:-100%;
+      }
+
+      &.active.prev,
+      &.active.next {
+        position: relative;
+        left:0;
+      }
+
+      &.go {
+        left:0;
+
+        &.active {
+          left:-100%;
+
+          &.prev {
+            left:100%;
+          }
+        }
+      }
+    }
+
+    // slide right
+    &.right {
+
+      .item {
+        // next slide
+        &.next {
+          left:-100%;
+        }
+
+        // prev slide
+        &.prev {
+          left:100%;
+        }
+
+        &.go {
+          left:0;
+
+          &.active {
+            left:100%;
+
+            &.prev {
+              left:-100%;
+            }
+          }
+        }
+      }
+    }
+
+    // slide down
+    &.down {
+
+      .cycle-inner {
+        height: 100%;
+      }
+
+      .item {
+        .transition(@cycle-transition-speed @cycle-easing-slide top);
+
+        &.next,
+        &.prev {
+          left:0;
+        }
+
+        // next slide
+        &.next {
+          top:-100%;
+        }
+
+        // prev slide
+        &.prev {
+          top:100%;
+        }
+
+        &.go {
+          top:0;
+
+          &.active {
+            top:100%;
+            left:0;
+
+            &.prev {
+              top:-100%;
+            }
+          }
+        }
+      }
+
+      &.xfade .item {
+        .transition(
+          @cycle-transition-speed @cycle-easing-slide top,
+          @cycle-transition-speed @cycle-easing-xfade opacity
+        );
+      }
+    }
+
+    // slide up
+    &.up {
+
+      .cycle-inner {
+        height: 100%;
+      }
+
+      .item {
+        .transition(@cycle-transition-speed @cycle-easing-slide top);
+
+        &.next,
+        &.prev {
+          left:0;
+        }
+
+        // next slide
+        &.next {
+          top:100%;
+        }
+
+        // prev slide
+        &.prev {
+          top:-100%;
+        }
+
+        &.go {
+          top:0;
+
+          &.active {
+            top:-100%;
+            left:0;
+
+            &.prev {
+              top:100%;
+            }
+          }
+        }
+      }
+
+      &.xfade .item {
+        .transition(
+          @cycle-transition-speed @cycle-easing-slide top,
+          @cycle-transition-speed @cycle-easing-xfade opacity
+        );
+      }
+    }
+  }
+}
+
+// Left/right controls for nav
+// ---------------------------
+
+.cycle-control {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: -(@cycle-control-width / 2);
+  width: @cycle-control-width;
+  height: @cycle-control-height;
+  margin-top: -(@cycle-control-height / 2);
+  font-size: @cycle-control-size;
+  line-height: @cycle-control-height;
+  color: @cycle-control-color;
+  text-align: center;
+  cursor:pointer;
+  background: @cycle-control-background-color;
+  border: @cycle-control-border;
+  .border-radius(@cycle-control-border-radius);
+  .opacity(@cycle-control-opacity);
+
+  // ensure no transition
+  // may interfere with other transitions
+  .transition(none);
+
+  // right control
+  &.right {
+    left: auto;
+    right: -(@cycle-control-width / 2);
+  }
+
+  // hover state
+  &:hover {
+    color: @cycle-control-color-hover;
+    text-decoration: none;
+    text-shadow:none;
+    .opacity(@cycle-control-opacity-hover);
+  }
+}
+
+// Cycle navigation elements for jumping to individual items
+// ---------------------------------------------------------
+
+// this element is expected to be a list, OL or UL (feel free to adjust)
+.cycle-nav {
+  text-align: center;
+  padding:5px 0;
+  list-style-type:none;
+  margin:0;
+  > li {
+    display: inline-block;
+    font-size: @cycle-nav-size;
+    a {
+      color: @cycle-nav-link-color;
+      &:hover {
+        color: @cycle-nav-link-color-hover;
+      }
+    }
+    &.active {
+      a, a:hover {
+        color: @cycle-nav-link-color-active;
+      }
+    }
+  }
+}

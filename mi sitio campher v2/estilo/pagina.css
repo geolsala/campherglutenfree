@@ -1,0 +1,79 @@
+/*al body*/
+.fondo_gral{
+	border-radius: 20px 20px 20px 20px;
+	opacity: 0.5;
+	z-index: 1;
+}
+.fondo_body_ajuste{
+	border-radius: 20px 20px 20px 20px;
+	opacity: 0.5;
+	position: absolute;
+	z-index: 1;
+}
+#fondo_body{
+	position:relative;
+}
+body	{
+	font-family:Century Gothic, Sans-serif;
+	font-size: 13pt;
+	color:#fff;
+	background-color: #7FB730;
+	margin: 0;
+	padding: 0;
+}
+.tabla_fondo_slider	{
+	border-radius:20px 20px 20px 20px;
+	opacity:0.5;
+	width:850px;
+	height:650px;
+	position:absolute;
+	margin-left:-25px;
+	margin-top:-25px;
+}
+div.ajuste3{
+	position:relative;	
+}
+/*div cabecera*/
+.clase1	{
+	margin-top:1%;
+	margin-left:15%;
+	margin-right:15%;
+	background: black;
+	border-radius: 10px 10px 10px 10px;
+	height:70px;
+	position:static;
+}
+#logo {
+	z-index:100;
+	margin-top: -5%;
+	margin-left: 55%;
+	position:relative;
+}
+div.ajuste1{
+	position:absolute;
+}
+/*pie de pagina*/
+footer	{
+	padding-top:3px;
+	padding-bottom:2px;
+	background-color:black;
+	font-family:Century Gothic, Sans-serif;
+	font-size: 9pt;
+	color:#FFF;
+	margin-left: 15%;
+	margin-right: 15%;
+	border-radius: 10px 10px 0px 0px;
+	position:relative;
+
+}
+/*content de pie de pagina + opacidad*/
+.opacidad	{
+	opacity: 0.5;
+}
+/* iconos redese sociales pie de pagina*/
+.fb{
+	position:relative;
+}
+.twitter{
+	position:relative;
+}
