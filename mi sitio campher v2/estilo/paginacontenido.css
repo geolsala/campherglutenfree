@@ -1,0 +1,42 @@
+/*al body*/
+body table{
+	margin-left:15%;
+	margin-right:15%;	
+	}
+.tabla{
+	padding: 1.5%;
+	opacity: 0.5;
+	z-index: 1;
+	border-radius: 20px 20px 20px 20px;
+	background-color: #FFFFFF;
+	color: #060;
+	text-align: justify;
+}
+.content_product_margin_left{
+	float: left;
+	margin-top: 2%;
+	margin-left: 2%;
+	margin-right: 5%;
+	color: black;
+	display: block;
+	position: relative;
+	z-index: 2;
+	width:300px;
+	height:300px;
+}
+.content_product_margin_right{
+	font-size: 11pt;
+	float: right;
+	margin-top: 2%;
+	margin-left: 5%;
+	margin-right: 2%;
+	color: black;
+	display: block;
+	position: relative;
+	font-style: normal;
+	font-family: "comfortaa", sans serif;
+	z-index: 2;
+}
+.padding{
+	padding-left:2%;	
+}

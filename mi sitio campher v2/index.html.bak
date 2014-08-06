@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>CampherGlutenFree</title>
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
-<link rel="stylesheet" type="text/css" href="estilo/pagina.css" media="all">
+  </head>
+  <body>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+    <title>CampherGlutenFree</title>
+    <link rel="stylesheet" type="text/css" href="estilo/pagina.css" media="all">
     <link rel="stylesheet" type="text/css" href="estilo/menu_desplegable.css">
     <link rel="stylesheet" type="text/css" href="estilo/slide.css" media="all">
     <link rel="shortcut icon" href="imagenes/campherlogo.jpg">
     <script type="text/javascript" src="estilo/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="estilo/jquery.cycle.all.js"></script>  
-    </head>
-  <body>
-    
-  <!--aqui empieza la acción-->
+    <script type="text/javascript" src="estilo/jquery.cycle.all.js"></script>
+    <!--aqui empieza la acción-->
     <header class="clase1"><!--header dentro del body aplicando CSS clase 1 LA IMG DEL LOGO CAMPHER (NO BORRAR)-->
-      <div style="position:absolute;" class="ajuste1">
-      <img src="imagenes/campherlogo_ver2.png" name="logo" width="113" height="100" id="logo"></div>
-      <div class="ajuste1">
-        <ul style="width:486px; left: 220px; height: 289px;" id="main_menu">
+      <div style="left: 194px; width: 197.75px; background-color: black;" class="ajuste1"><img
+
+          style="margin-top: -17.5667px; top: 0px; left: 0px; width: 65px; height: 57px;"
+
+          id="logo" src="imagenes/campherlogo_ver2.png"></div>
+      <div style="top: 36px; height: 76px; left: 194px; width: 601px;" class="ajuste1">
+        <ul id="main_menu">
           <li><a href="#" onmouseover="this.style.color='green'" onmouseout="this.style.color='white'"
 
               onclick="this.style.color='white'">

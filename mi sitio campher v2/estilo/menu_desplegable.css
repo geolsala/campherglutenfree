@@ -4,13 +4,12 @@ a{
 	color:white;
 }
 ul 	{
+	display: block;
 	list-style-type:none;
 	position:relative;
 	margin-left:40%;
 	margin-top:4.5%;
-}
-div.ajuste2{
-	position:absolute;
+	top: -1px;
 }
 li 	{
 	margin-top:-100%;
