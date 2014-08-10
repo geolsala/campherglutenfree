@@ -1,9 +1,7 @@
 /*al body*/
-body table{
+.tabla{
 	margin-left:15%;
 	margin-right:15%;	
-	}
-.tabla{
 	padding: 1.5%;
 	opacity: 0.5;
 	z-index: 1;
@@ -12,31 +10,32 @@ body table{
 	color: #060;
 	text-align: justify;
 }
-.content_product_margin_left{
-	float: left;
-	margin-top: 2%;
-	margin-left: 2%;
-	margin-right: 5%;
-	color: black;
-	display: block;
-	position: relative;
-	z-index: 2;
-	width:300px;
-	height:300px;
+.content_product_margin_left:hover{
+	opacity:0.4;
+ 	-moz-transition:all 0.8s ease;
+	-ms-transition:all 0.8s ease;
+	-webkit-transition:all 0.8s ease;
 }
 .content_product_margin_right{
-	font-size: 11pt;
-	float: right;
-	margin-top: 2%;
-	margin-left: 5%;
-	margin-right: 2%;
-	color: black;
-	display: block;
-	position: relative;
-	font-style: normal;
-	font-family: "comfortaa", sans serif;
-	z-index: 2;
-}
-.padding{
+	border-radius: 20px 0px 0px 20px;
+	background:#2A5F00;
+	text-align:center;
 	padding-left:2%;	
+}
+.content_product_margin_right:hover{
+	border-radius: 20px 20px 20px 20px;
+	background:#007F55;
+	-moz-transition:all 0.8s ease;
+	-ms-transition:all 0.8s ease;
+	-webkit-transition:all 0.8s ease;
+}
+.eleva_text_margin_left_content:hover{
+	background-image:url(../imagenes/textos.png);
+	background-repeat:no-repeat;
+	background-color:#009FAA;
+	padding-top:30px;
+	-moz-transition:all 0.8s ease;
+	-ms-transition:all 0.8s ease;
+	-webkit-transition:all 0.8s ease;
+
 }

@@ -1,45 +1,83 @@
-<!DOCTYPE html> 
-<html lang="es"> 
-<head> 
-    <meta charset="utf-8" /> 
-    <title>CampherGlutenFree</title>
-	<link rel="stylesheet" type="text/css" href="../estilo/pagina.css" media="all"> 
-    <link rel="stylesheet" type="text/css" href="../estilo/menu_desplegable.css"> 
-  	<link rel="shortcut icon" href="../imagenes/campherlogo.jpg">
-</head> 
-
-<body> <!--aqui empieza la acción-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>CampherGlutenFree</title>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+	<link rel="stylesheet" type="text/css" href="../estilo/pagina.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../estilo/menu_desplegable.css">
+    <link rel="stylesheet" type="text/css" href="../estilo/slide.css" media="all">
+    <link rel="shortcut icon" href="../imagenes/campherlogo.jpg">
+    <script type="text/javascript" src="../estilo/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../estilo/jquery.cycle.all.js"></script>
+    
+</head>
+<body>
+<!--aqui empieza la acción-->
 <header class="clase1"><!--header dentro del body aplicando CSS clase 1 LA IMG DEL LOGO CAMPHER (NO BORRAR)-->
-<div class="ajuste1"><img id="logo"src="../imagenes/campherlogo_ver2.png" width="113" height="100"></div>
-  <div class="ajuste2"><ul id="main_menu">
-	<li><a href="../index.html" onMouseOver="this.style.color='green'" onMouseOut="this.style.color='white'" onClick="this.style.color='white'" ><center><h5>Inicio</h5></center></a></li>
-		<li><a href="../pagina/productos.html" onMouseOver="this.style.color='green'" onMouseOut="this.style.color='white'" onClick="this.style.color='white'"><center><h5>Productos</h5></center></a>
-			<ul class="submenu">
-       			<li><a href="../pagina/pedidos.html" onMouseOver="this.style.color='green'" onMouseOut="this.style.color='white'" onClick="this.style.color='white'"><center><h5>Pedidos</h5></center></a></li>
-				<li><a href="../pagina/recetas.html" onMouseOver="this.style.color='green'" onMouseOut="this.style.color='white'" onClick="this.style.color='white'"><center><h5>Recetas</h5></center></a></li>
-				<li><a href="../pagina/tips.html" onMouseOver="this.style.color='green'" onMouseOut="this.style.color='white'" onClick="this.style.color='white'"><center><h5>Tips</h5></center></a></li>
-       		</ul>
-		</li>
-	<li><a href="#" onMouseOver="this.style.color='green'" onMouseOut="this.style.color='white'" onClick="this.style.color='white'"><center><h5>Contactenos</h5></center></a></li></ul>
-	</div>  
+	<div style="position:absolute;" class="ajuste1"><img src="../imagenes/campherlogo_ver2.png" name="logo" width="113" height="100" id="logo"></div>
+	<div class="ajuste1">
+		<ul style="width:486px; left: 220px; height: 289px;" id="main_menu">
+			<li><a href="../index.html" onmouseover="this.style.color='green'" onmouseout="this.style.color='white'" onclick="this.style.color='white'"><center><h5>Inicio</h5></center></a></li>
+			<li><a href="../pagina/productos.html" onmouseover="this.style.color='green'" onmouseout="this.style.color='white'" onclick="this.style.color='white'"><center><h5>Productos</h5></center></a>
+				<ul class="submenu">
+					<li><a href="../pagina/pedidos.html" onmouseover="this.style.color='green'" onmouseout="this.style.color='white'" onclick="this.style.color='white'"><center><h5>Pedidos</h5></center></a></li>
+					<li><a href="../pagina/recetas.html" onmouseover="this.style.color='green'" onmouseout="this.style.color='white'" onclick="this.style.color='white'"><center><h5>Recetas</h5></center></a></li>
+					<li><a href="../pagina/tips.html" onmouseover="this.style.color='green'" onmouseout="this.style.color='white'" onclick="this.style.color='white'"><center><h5>Tips</h5></center></a></li>
+				</ul>
+			</li>
+			<li><a href="../pagina/contactenos.html" onmouseover="this.style.color='green'" onmouseout="this.style.color='white'" onclick="this.style.color='white'"><center><h5>Contactenos</h5></center></a></li>
+		</ul>
+	</div>
 </header>
+<br><br>
+<!--"la tabla del DIV"--> 
+<div style="margin-left:15%; margin-right:15%; text-align: justify;">
+	<table cellpadding="5">
+	<tr>
+		<td><img style="border-radius:20px 20px 20px 20px; opacity:0.5;" src="../imagenes/glutenfree.jpg"></td>
+		<td bgcolor="#336600" style="border-radius:20px 0px 0px 20px; padding:1%">
+        	<p>Estimados clientes</p>
+			<p style="opacity:0.5;"><em>Campher Gluten Free</em></p>
+			<p>Es una empresa cuyos productos a la venta son hechos a base de harinas libres de gluten, libre de lácteos, libre de soya y libre de azúcar refinada...</p>
+			<p>y por lo tanto estamos en constante mejoramiento, y sus sugerencias son muy validas para perfeccionarnos.</p>
+	  </td>        
+	</tr>
+    <td height="30px"></td>
+<!--segunda tabla dentro de la "tabla del DIV"-->    
+<div style="display:block; position:absolute;margin-right:15%; position:relative">
+	<table style="border-radius:20px 20px 20px 20px; box-shadow: 5px 5px 5px #2A3F55;" align="center" bgcolor="#003333" cellpadding="5" width="600px" height="100">
+	<tr>
+		<td colspan="2">
+        <form action="../estilo/formulario.php" method="post" name="formulario_contactos">
+		<p>Nombre:</p><input type="text" name="name" size="100">
+		<p>Email:</p><input type="text" name="mail" size="100">
+		<p>Asunto:</p><input type="text" name="sugerencia" size="100">
+		<p>Mensaje:</p><textarea name="contenido" cols=75 rows=10></textarea>
+		<br><br>
+		<center><button class="button" style="padding:10px 10px 10px 10px; background:#AA9F55; color:#FFF;" type="submit" onClick="alert('Proceso Completado con Exito')">Enviar</button>
+		<button class="button" style="padding:10px 10px 10px 10px; background:#AA9F55; color:#FFF;" type="reset">Borrar Todo</button></center>
+		</form>
+        </td>
+	</tr>
+	</table>
+</div>
+	</table>
+</div>
 <br>
-<!--programacion contexto despues de estas letras jejeje-->
-<div><table class="fondo_gral" width="900" height="600" align="center" bgcolor="white"><td></td></table></div>
-<br>
+<p></p>
 <!--pie de pagina-->
 <footer>
 	<div class="opacidad">
 	<center>
-		<p>Derechos reservados</p> 
+		<p>Derechos reservados</p>
 		<p>Contactenos en </p>
 		<p><em>info@campher.com</em></p>
 	</center>
-		<center>
-			<a class="fb" href="https://www.facebook.com/Campherglutenfree?fref=ts" target="new"><img src="../imagenes/fb.png"></a>
-            <a class="twitter" href="https://twitter.com/CampherGlutenFr" target="new" ><img src="../imagenes/t.png"></a>
-		</center>
-     </div>
+	<center> 
+		<a class="fb" href="https://www.facebook.com/Campherglutenfree?fref=ts" target="new"><img src="../imagenes/fb.png"></a> 
+        <a href="https://twitter.com/CampherGlutenFr" target="new" class="twitter"><img src="../imagenes/t.png"></a> 
+	</center>
+	</div>
 </footer>
-</body> 
+</body>
 </html>

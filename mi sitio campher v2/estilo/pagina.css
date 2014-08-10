@@ -44,7 +44,15 @@ div.ajuste1{
 div.ajuste2{
 	position:relative;	
 }
-/*div cabecera*/
+.button:hover{
+	background:#00DF00;
+	-moz-transition:all 0.8s ease;
+	-ms-transition:all 0.8s ease;
+	-webkit-transition:all 0.8s ease;
+
+}
+
+/*div cabecera o header*/
 .clase1	{
 	margin-top:1%;
 	margin-left:15%;
