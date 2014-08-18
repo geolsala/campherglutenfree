@@ -1,22 +1,24 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <title>CampherGlutenFree</title>
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
-	<link rel="stylesheet" type="text/css" href="../estilo/pagina.css" media="all">
+    <title>CampherGlutenFree</title>
+	<link rel="stylesheet" type="text/css" href="../estilo/pagina.css" media="all"> 
+    <link rel="stylesheet" type="text/css" href="../estilo/paginacontenido.css">
     <link rel="stylesheet" type="text/css" href="../estilo/menu_desplegable.css">
-    <link rel="stylesheet" type="text/css" href="../estilo/slide.css" media="all">
-    <link rel="shortcut icon" href="../imagenes/campherlogo.jpg">
+    <link rel="stylesheet" type="text/css" href="../estilo/slide3.css"> 
     <script type="text/javascript" src="../estilo/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="../estilo/jquery.cycle.all.js"></script>
-    
-</head>
-<body>
-<!--aqui empieza la acción-->
+    <script type="text/javascript" src="../estilo/jquery.cycle.all.js"></script> 
+    <script type="text/javascript" src="../estilo/jquery-migrate.js"></script>
+  	<link rel="shortcut icon" href="../imagenes/campherlogo.jpg">
+ </head> 
+
+<body> <!--aqui empieza la acción-->
+
 <header class="clase1"><!--header dentro del body aplicando CSS clase 1 LA IMG DEL LOGO CAMPHER (NO BORRAR)-->
-	<div style="position:absolute;" class="ajuste1"><img src="../imagenes/campherlogo_ver2.png" name="logo" width="113" height="100" id="logo"></div>
+	<div style="position:absolute; margin-top:1.5%;" class="ajuste1"><img src="../imagenes/campherlogo_ver2.png" name="logo" width="113" height="100" id="logo"></div>
 	<div class="ajuste1">
-		<ul style="width:486px; left: 220px; height: 289px;" id="main_menu">
+		<ul style="width:486px; margin-top:12%; left: 220px; height: 289px;" id="main_menu">
 			<li><a href="../index.html" onmouseover="this.style.color='green'" onmouseout="this.style.color='white'" onclick="this.style.color='white'"><center><h5>Inicio</h5></center></a></li>
 			<li><a href="../pagina/productos.html" onmouseover="this.style.color='green'" onmouseout="this.style.color='white'" onclick="this.style.color='white'"><center><h5>Productos</h5></center></a>
 				<ul class="submenu">
@@ -30,44 +32,81 @@
 	</div>
 </header>
 <br><br>
-<!--"la tabla del DIV"--> 
-<div style="margin-left:15%; margin-right:15%; text-align: justify; font-size:14px">
-	<table cellpadding="5">
-	<tr>
-		<td><img style="border-radius:20px 20px 20px 20px; opacity:0.5;" src="../imagenes/glutenfree.jpg"></td>
-		<td bgcolor="#336600" style="border-radius:20px 0px 0px 20px; padding:1%">
-			<p>Estimados clientes</p>
-			<p><em>Campher Gluten Free</em> Es una empresa cuyos productos a la venta son hechos a base de harinas libres de gluten, libre de lácteos, libre de soya y libre de azúcar refinada...</p>
-			<p>Nos pueden hacer los pedidos mediante llamada telefónica o mediante debito bancario o cta PAYPAL..</p>
-			<p>*Campos requeridos</p>
-	  </td>        
-	</tr>
-    <td height="30px"></td>
-<!--segunda tabla dentro de la "tabla del DIV"-->    
-<div style="display:block; position:absolute;margin-right:15%; position:relative">
-	<table style="border-radius:20px 20px 20px 20px; box-shadow: 5px 5px 5px #2A3F55;" align="center" bgcolor="#003333" cellpadding="5" width="600px" height="100">
-	<tr>
-		<center><p style="font-size: 14px; color:white; text-shadow: black 0.1em 0.1em 0.2em;">Formulario de pedidos</p></center>
-		<td colspan="2">
-        <form action="../estilo/formulario_pedido.php" name="formulario_pedidos" method="post">
-		<p>Nombre:</p><input type="text" name="name_pedido" size="100">
-		<p>Email:</p><input type="text" name="mail_pedido" size="100">
-        <p>Dirección & Referencia Domicilaria:</p><input type="text" name="direccion_pedido" size="100">
-		<p>Forma de pago:</p>
-        <p><input type="checkbox" name="formapago_paypal_pedido">Paypal</p>
-        <p><input type="checkbox" name="formapago_depositobco_pedido">Depósito Bancario</p>
-		<p>Petición Extra a la orden:</p><textarea name="peticion_extra_pedido" cols=75 rows=10></textarea>
-		<br><br>
-		<center><button target="mrgeova00@hotmail.com" name="submit_pedido" class="button" style="padding:10px 10px 10px 10px; background:#AA9F55; color:#FFF;" type="submit" onClick="alert('Proceso Completado con Exito')">Enviar</button>
-		<button name="reset_pedido" class="button" style="padding:10px 10px 10px 10px; background:#AA9F55; color:#FFF;" type="reset">Borrar Todo</button></center>
-		</form>
-        </td>
-	</tr>
-	</table>
-</div>
-	</table>
-</div>
-<br>
+<!--programacion contexto despues de estas letras jejeje-->
+<table class="tabla" align="center" bgcolor="#FFF"><!--!!tabla!!-->
+<tr>
+	<td><div><img src="../imagenes/glutenfree.jpg" style="border-radius:20px 20px 20px 20px"; width="249" height="227"></div></td>
+	<td colspan="2">
+	<div>
+		<p style="font-size:15px font-weight: bold">Estimados Usuarios </p>
+    	<p style="font-size:13px">Presentamos a continuación ciertos tips para mejorar nuestra alimentación.</p>
+    </div>
+	</td>
+</tr>
+<tr>
+<td colspan="2" height="15px"></td>
+</tr>
+<tr>
+</table>
+<br><!--Aqui viene el contenedor de todos nuestros productos-->
+<script type="text/javascript">
+	$('#slider3').cycle({
+		timeout:  0, 
+		fx:		'fade',
+		next:	'#next3',
+		prev:	'#prev3',
+	});
+</script>
+<center><div id="wrapper3" >
+	<div id="container_photosplus3" >
+		<div class="controller" id="prev3"></div>
+		<div id="slider3"> 
+<!-------------!!tabla 1 dentro del warper despues de este texto!!--------->   
+		<table>
+			<tr>
+				<td class="content_product_margin_left"><img class="screenshot"  style="border-radius: 20px 20px 20px 0px;" width="500" height="432" src="../imagenes/cero leches.jpg"></a></td>
+				<td class="content_product_margin_right" style="width:340px;"><a onMouseOver="this.style.color='black'" onMouseOut="this.style.color='white'" onClick="this.style.color='white'">¿Por qué una dieta libre de gluten, Caseíena y soya?</a>
+				<p style="width:300px;"><b>LA INVESTIGACIÓN Q NECESITA SABER!!!</b></p>
+				<p style="width:300px; height:270px; overflow:auto; padding:1%; text-align:justify"> 
+                Investigaciones muestran que poner a tu hijo en una dieta libre de estas   proteínas, encontradas en la leche y el trigo, puede ser la acción más   efectiva que puedes tomar para combatir el Trastorno del Desarrollo de tu hijo.<br>
+      La razón es que un subgrupo importante de personas con autismo o TDAH,   tienen problemas para desdoblar estas proteínas presentes en los   lácteos, trigo, centeno, cebada, avena y soya.<br>
+      Estas proteínas   incompletamente digeridas, se convierten en péptidos idénticos   prácticamente a la morfina, éstos atraviesan la pared intestinal y   llegan hasta el cerebro interfiriendo con la transmisión de impulsos   nerviosos, provocando un efecto profundo en la conducta, el desarrollo y   el aprendizaje.<br>
+      <br>
+      ¿CÓMO SABER SI MI HIJO NECESITA ESTA DIETA?<br>
+      Existen varias formas de saber si tu hijo es candidato a mejorar con   esta dieta: Una es por medio de análisis de laboratorio que permiten   medir la cantidad de péptidos opiáceos que arroja la orina o por medio   de una muestra de suero sanguíneo, checar sus alergias IgG a estos   alimentos.<br>
+      Otra forma sería observar si tiene preferencia muy limitada a ciertos alimentos como la leche y el pan. <br>
+      Adicionalmente estos niños suelen presentar problemas   gastrointestinales y cutáneos. Finalmente podríamos agregar que algo muy   notorio es su alta resistencia al dolor. Este fenómeno ocurre debido a   la presencia de esta &ldquo;morfina&rdquo; en el cuerpo. <br>
+      Otras alteraciones   sensoriales podrían ser el quitarse todo el tiempo los calcetines, que   les molesten las etiquetas en el cuello, molestia al cortarse las uñas o   el pelo, hipersensibilidad a los sonidos o a los olores.<br>
+      <br>
+      NO ES TAN DIFÍCIL COMO PARECE<br>
+      Antes que nada ¡Tómenlo con calma!<br>
+      Aunque pareciera que llevar esta dieta fuera imposible, en cuanto   tengan suficiente información, comprenderán porque miles y miles de    familias en el mundo, están llevando con éxito la dieta.<br>
+      Algunos   padres de familia sienten temor de que al retirar algunos alimentos  de   la dieta, sus hijos pasarán hambre. Nuestra experiencia nos dice que   esto, no solo es falso, sino que además la selectividad a cierto tipo de   comida se eliminará.<br>
+      Es importante que su pediatra o nutricionista   le asesore para sustituir el trigo, centeno y cebada por otros cereales   para la elaboración de pan y galletas y será  importante en algunos   casos, suplementar con calcio adicional, para completar los   requerimientos básicos diarios al estar sin lácteos. No están solos,   LINCA estará siempre para tender la mano. <br>
+      Los resultados de esta   dieta, son a corto plazo y van desde una mejoría de hiperactividad,   mejor patron de sueño, mejora de atención, eliminación de conductas   inapropiadas, un mejor  aprovechamiento de sus terapias, entre otros.</p>
+				</td>
+			</tr>
+		</table>
+<!--!!tabla 2 dentro del warper despues de este texto!!-->   
+		<table>
+			<tr>
+				<td class="content_product_margin_left"><img class="screenshot"  style="border-radius: 20px 20px 20px 0px;" width="500" height="432" src="../imagenes/fuente de thedr.com.jpg"></a></td>
+				<td class="content_product_margin_right" style="width:340px;"><a onMouseOver="this.style.color='black'" onMouseOut="this.style.color='white'" onClick="this.style.color='white'">¿Porqué no debemos usar el término &quot;Intolerancia al Gluten&quot;?</a>
+				<p style="width:300px;"><b>UNA VERDAD!</b></p>
+				<p style="width:300px; height:270px; overflow:auto; padding:1%; text-align:justify">
+				Son diferentes las formas en las que el gluten   afecta al organismo, depende  de la predisposición genética de cada   individuo. En algunos con el daño intestinal evidente (enfermedad   celiaca), en el caso de autismo se desdobla de manera anormal   en peptidos opiaceos, y en otras enfermedades o trastornos (como   enfermedades autoinmunes) también son diferente los síntomas, en fin el   gluten es una proteína de difícil digestión por ello es mejor eliminarla   de su dieta.
+				</p>
+				</td>
+			</tr>
+		</table>
+<!--!!FIN DE TABLAS dentro del warper despues de este texto!!--> 
+        </div>
+		<div class="controller" id="next3"></div>
+	</div>
+</div></center>
+    
+<!--espacio-->
+<br><br>
 <p></p>
 <!--pie de pagina-->
 <footer>
@@ -85,10 +124,3 @@
 </footer>
 </body>
 </html>
-
-
-
-
-
-
-
