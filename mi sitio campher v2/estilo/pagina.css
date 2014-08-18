@@ -61,6 +61,10 @@ div.ajuste2{
 	border-radius: 10px 10px 10px 10px;
 	height:70px;
 	position:static;
+	
+	width:100%; 
+	min-width:320px;
+	 max-width:480px;
 }
 #logo {
 	z-index:100;

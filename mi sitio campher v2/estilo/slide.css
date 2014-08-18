@@ -37,7 +37,7 @@
 }
 #prev:hover{
 	background:#FFF;
-	background-image: url(../imagenes/prev_mouseover.png);
+	background-image: url(../imagenes/prev_mouseover_main.png);
 	background-repeat: no-repeat;
 	opacity:0.3;
 	border-radius: 10px 0px 0px 10px;
@@ -47,7 +47,7 @@
 	}
 #next:hover{
 	background:#FFF;
-	background-image: url(../imagenes/next_mouseover.png);
+	background-image: url(../imagenes/next_mouseover_main.png);
 	background-repeat: no-repeat;
 	opacity:0.3;
 	border-radius: 0px 10px 10px 0px;
