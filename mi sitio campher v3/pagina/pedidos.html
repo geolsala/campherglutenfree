@@ -65,20 +65,18 @@
             	<a href="../pagina/productos.html" onmouseover="this.style.color='green'" onmouseout="this.style.color='black'" onclick="this.style.color='white'">
                 <h5>Productos</h5>
             	</a>
-            	<ul class="submenu">
-              		<li>
-                    	<a href="../pagina/recetas.html" onmouseover="this.style.color='green'" onmouseout="this.style.color='black'" onclick="this.style.color='white'">
-                    	<h5>Recetas</h5>
-                		</a>
-					</li>
-              		<li>
-                    	<a href="../pagina/tips.html" onmouseover="this.style.color='green'" onmouseout="this.style.color='black'" onclick="this.style.color='white'">
-                    	<h5>Tips</h5>
-                		</a>
-                	</li>
-            	</ul>
+            </li>    
+            <li>
+                <a href="../pagina/recetas.html" onmouseover="this.style.color='green'" onmouseout="this.style.color='black'" onclick="this.style.color='white'">
+                <h5>Recetas</h5>
+                </a>
 			</li>
-       		<li>
+            <li>
+               	<a href="../pagina/tips.html" onmouseover="this.style.color='green'" onmouseout="this.style.color='black'" onclick="this.style.color='white'">
+                <h5>Tips</h5>
+                </a>
+            </li>
+            <li>
 				<a href="../pagina/pedidos.html" onmouseover="this.style.color='green'" onmouseout="this.style.color='black'" onclick="this.style.color='white'">
 				<h5>Pedidos</h5>
 				</a>
@@ -124,14 +122,14 @@
 				<form class="modificacion_formulario" action="mailto:mrgeova00@hotmail.com" name="formulario_pedidos" method="post">
 				<p>&nbsp;</p>
 				<p id="centrado_con_color_rojo">*Nombre & Apellido:</p>
-				<input type="text" name="name_pedido" size="70">
-				<p>Email:</p><input type="text" name="mail_pedido" size="70">
-        		<p id="centrado_con_color_rojo">*Dirección & Referencia Domicilaria:</p><input type="text" name="direccion_pedido" size="70">
-        		<p id="centrado_con_color_rojo">*Producto solicitante:</p><input type="text" name="elpedido_pedido" size="70">
+				<input type="text" name="name_pedido" size="70" class="textoArea">
+				<p>Email:</p><input type="text" name="mail_pedido" size="70" class="textoArea">
+        		<p id="centrado_con_color_rojo">*Dirección & Referencia Domicilaria:</p><input type="text" name="direccion_pedido" size="70" class="textoArea">
+        		<p id="centrado_con_color_rojo">*Producto solicitante:</p><input type="text" name="elpedido_pedido" size="70" class="textoArea">
 				<p id="centrado_con_color_rojo">*Forma de pago:</p>
         		<p id="centrado_con_color_rojo"><input type="checkbox" name="formapago_paypal_pedido">Paypal</p>
 		        <p id="centrado_con_color_rojo"><input type="checkbox" name="formapago_depositobco_pedido">Depósito Bancario</p>
-				<p>Petición Extra a la orden:</p><textarea name="peticion_extra_pedido" cols=60 rows=10></textarea>
+				<p>Petición Extra a la orden:</p><textarea name="peticion_extra_pedido" cols=60 rows=10 class="textoArea"></textarea>
 				<br><br>
 				<button name="submit_pedido" type="submit" onClick="alert('Proceso Completado con Exito')">Enviar</button>
 				<button name="reset_pedido" type="reset">Borrar Todo</button>
