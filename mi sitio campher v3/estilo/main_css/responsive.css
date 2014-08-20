@@ -41,4 +41,8 @@ div.nav ul li {
 		display: none;
 	}
 		
+	.textoArea{
+		position:relative;
+		max-width:80%;
+	
 }

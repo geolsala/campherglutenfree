@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	
+	<title>CampherGlutenFree</title>
+	
+	<meta name="viewport" content="width=device-width">
+	
+	<!-- css -->
+    <link rel="shortcut icon" href="../imagenes/campherlogo.jpg">
+    <link rel="stylesheet" href="../estilo/main_css/slide.css">
+	<link rel="stylesheet" href="../estilo/main_css/main.css">
+	<link rel="stylesheet" href="../estilo/main_css/responsive.css" media="screen and (max-width: 900px)">
+
+    <!--js-->
+	<script src="../estilo/main_js/jquery.js"></script>
+	<script src="../estilo/main_js/responsiveslides.js"></script>
+    <script>
+		$(function() {
+			$(".rslides").responsiveSlides({
+			nav: true,
+			pager: false,
+			});
+		});
+	</script>
+   
+   <!-- $(".rslides").responsiveSlides({        ALGUNAS MOIDIFICACIONES PARA mODIFICAr
+  auto: true,             // Boolean: Animate automatically, true or false
+  speed: 500,            // Integer: Speed of the transition, in milliseconds
+  timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+  pager: false,           // Boolean: Show pager, true or false
+  nav: false,             // Boolean: Show navigation, true or false
+  random: false,          // Boolean: Randomize the order of the slides, true or false
+  pause: false,           // Boolean: Pause on hover, true or false
+  pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+  prevText: "Previous",   // String: Text for the "previous" button
+  nextText: "Next",       // String: Text for the "next" button
+  maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+  navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+  manualControls: "",     // Selector: Declare custom pager navigation
+  namespace: "rslides",   // String: Change the default namespace used
+  before: function(){},   // Function: Before callback
+  after: function(){}     // Function: After callback
+});-->
+
+</head>
+<body>
+	<!-- header -->
+	<div class="header"><div class="section-inner">
+        <img src="../imagenes/campherlogo_ver2.png" width="150" height="134" alt="campher_logo">
+	</div></div><!--/header-->
+	
+	<!-- nav -->
+	<div class="nav"><div class="section-inner">
+		<ul id="main_menu" class="clearfix">
+			<li>
+            	<a href="../index.html" onmouseover="this.style.color='green'" onmouseout="this.style.color='white'" onclick="this.style.color='white'">
+                <h5>Inicio</h5>
+            	</a>
+			</li>
+			<li>
+            	<a href="../pagina/productos.html" onmouseover="this.style.color='green'" onmouseout="this.style.color='black'" onclick="this.style.color='white'">
+                <h5>Productos</h5>
+            	</a>
+            	<ul class="submenu">
+              		<li>
+                    	<a href="../pagina/recetas.html" onmouseover="this.style.color='green'" onmouseout="this.style.color='black'" onclick="this.style.color='white'">
+                    	<h5>Recetas</h5>
+                		</a>
+					</li>
+              		<li>
+                    	<a href="../pagina/tips.html" onmouseover="this.style.color='green'" onmouseout="this.style.color='black'" onclick="this.style.color='white'">
+                    	<h5>Tips</h5>
+                		</a>
+                	</li>
+            	</ul>
+			</li>
+       		<li>
+				<a href="../pagina/pedidos.html" onmouseover="this.style.color='green'" onmouseout="this.style.color='black'" onclick="this.style.color='white'">
+				<h5>Pedidos</h5>
+				</a>
+			</li>
+			<li>
+            	<a href="../pagina/contactenos.html" onmouseover="this.style.color='green'" onmouseout="this.style.color='black'" onclick="this.style.color='white'">
+                <h5>Contactenos</h5>
+            	</a>
+			</li>
+		</ul>
+	</div></div><!--/nav-->
+	
+	<!-- body-content -->
+	<div class="body-content"><div class="section-inner">
+		
+		<!-- thirds -->
+		<div class="thirds clearfix">
+			
+			<!-- one-third -->
+        	<div id="centrado">
+			<div class="one-third mobile-collapse">
+            	<div><img class="centrado" src="../imagenes/glutenfree.jpg"; width="249" height="227" alt="sin_gluten"></div>
+           	</div>
+			</div><!--/one-third-->
+			
+			<!-- one-third -->
+			<div class="one-third one-third-last mobile-collapse">
+				<h2>Estimados Clientes</h2><br>
+				<p><em>Campher Gluten Free</em></p>
+				<p id="justificado">Es una empresa cuyos productos a la venta son hechos a base de harinas libres de gluten, libre de lácteos, libre de soya y libre de azúcar refinada...
+				y por lo tanto estamos en constante mejoramiento, y sus sugerencias son muy validas para perfeccionarnos.</p>
+            </div><!--/one-third-->
+
+		</div><!--/thirds-->
+		
+        <!-- two-columns -->
+		<div class="two-columns clearfix">
+        
+    		<!-- main -->
+            <div id="centrado">    
+			<div class="main mobile-collapse">
+   				
+				<form class="modificacion_formulario" action="mailto:mrgeova00@hotmail.com" method="post" enctype="TEXT/PLAIN" name="formulario_contactos">
+				<p>&nbsp;</p>
+                <p>Nombre:</p><input name="name" type="text" size="70" maxlength="50">
+				<p>Email:</p><input type="text" name="mail" size="70" maxlength="50">
+				<p>Asunto:</p><input type="text" name="sugerencia" size="70" maxlength="50">
+				<p>Mensaje:</p><textarea name="contenido" cols=50 rows=10></textarea>
+				<br><br>
+				<button class="button" type="submit" onClick="alert('Proceso Completado con Exito')">Enviar</button>
+				<button class="button" type="reset">Borrar Todo</button>
+				<p>&nbsp;</p>
+				</form>
+    		</div>
+            </div><!--/main-->
+		</div><!--/two-columns-->
+        
+	</div></div><!--/body-content-->
+	
+	<!-- footer -->
+	<div class="footer"><div class="section-inner">
+		
+		<p>Derechos reservados</p>
+        <p>Contactenos en </p>
+        <p><em>info@campher.com</em></p>
+        	<div>
+				<a class="fb" href="https://www.facebook.com/Campherglutenfree?fref=ts" target="new"><img src="../imagenes/fb.png" alt="fb_logo"></a>
+                <a class="twitter" href="https://twitter.com/CampherGlutenFr" target="new" ><img src="../imagenes/t.png" alt="twitter_logo"></a>
+      		</div>
+	</div></div><!--/footer-->
+	
+
+</body></html>
+
