@@ -40,9 +40,9 @@ div.nav ul li {
 	.hide-mobile {
 		display: none;
 	}
-		
+	
 	.textoArea{
 		position:relative;
 		max-width:80%;
-	
+	}
 }
