@@ -149,11 +149,14 @@ div.main {
 }
 .hover_productos:hover{
 	margin:auto;
-	width:100%;
-	height:100%;
+	width:75%;
+	height:75%;
 	transition:1s ease ;
 	box-shadow: 10px 10px 20px #333;
 }
+.opacidad:hover{
+	opacity:0.8
+	}
 
 .modificacion_formulario{
 	background:#060;
@@ -199,6 +202,11 @@ div.footer {
 	text-align:center;
 }
 
+.para_los_validadores{
+	border:0;
+	width:88px;
+	height:31px
+}
 .clearfix:before, .clearfix:after { 
 	content: ""; 
 	display: table; 
